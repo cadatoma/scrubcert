@@ -10,11 +10,11 @@
 <style>
 :root{
   --tinta:#14243a; --suave:#5a6a80; --fondo:#f7f8fa; --tarjeta:#ffffff;
-  --marca:#1f5fbf; --marca-oscura:#17488f; --borde:#e2e6ec;
+  --marca:#1f5fbf; --marca-oscura:#17488f; --borde:#e2e6ec; --realce:#eef3fb;
 }
 @media (prefers-color-scheme: dark){
   :root{--tinta:#e8edf4; --suave:#9fb0c6; --fondo:#0f1621; --tarjeta:#161f2c;
-        --marca:#6fa2ee; --marca-oscura:#8fbaf5; --borde:#26313f;}
+        --marca:#6fa2ee; --marca-oscura:#8fbaf5; --borde:#26313f; --realce:#1b2534;}
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--fondo);color:var(--tinta);
@@ -22,18 +22,26 @@ body{margin:0;background:var(--fondo);color:var(--tinta);
   -webkit-text-size-adjust:100%}
 a{color:var(--marca)}
 .barra{background:var(--tarjeta);border-bottom:1px solid var(--borde)}
-.barra div{max-width:760px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:10px}
+.barra div{max-width:760px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;
+  gap:10px;flex-wrap:wrap}
 .barra strong{font-size:17px;letter-spacing:-.2px}
-.barra a{margin-left:auto;font-size:14px;text-decoration:none}
+.barra strong a{color:inherit;text-decoration:none}
+.barra nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+.barra nav a{text-decoration:none}
 main{max-width:760px;margin:0 auto;padding:28px 20px 64px}
 h1{font-size:30px;line-height:1.2;letter-spacing:-.5px;margin:.4em 0 .2em}
 h2{font-size:20px;letter-spacing:-.2px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--borde)}
 h2:first-of-type{border-top:none;padding-top:0}
+h3{font-size:16px;margin:1.6em 0 .3em}
 .sub{color:var(--suave);font-size:14px;margin:0 0 2em}
 ul{padding-left:1.2em}
 li{margin:.35em 0}
 hr{border:none;border-top:1px solid var(--borde);margin:2.5em 0}
-.pie{color:var(--suave);font-size:13px;margin-top:3em}
+.pie{color:var(--suave);font-size:13px;margin-top:1.2em}
+.aviso{color:var(--suave);font-size:12.5px;line-height:1.55;margin-top:2.5em;
+  padding-top:1.2em;border-top:1px solid var(--borde)}
+.pie-nav{font-size:13px;line-height:2;margin-top:3em}
+.pie-nav a{text-decoration:none;margin-right:14px;white-space:nowrap}
 .tarjeta{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:20px 22px;margin:1.5em 0}
 .cta{display:inline-block;background:var(--marca);color:#fff;text-decoration:none;
   padding:12px 22px;border-radius:10px;font-weight:600;margin-top:.5em}
@@ -41,18 +49,38 @@ hr{border:none;border-top:1px solid var(--borde);margin:2.5em 0}
 .lista-lim li{padding-left:1.5em;position:relative}
 .lista-lim li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;
   border-radius:50%;background:var(--marca)}
+.rueda{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.2em 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;color:var(--suave);font-size:13px;padding-bottom:.6em}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--borde);vertical-align:top}
+th{font-weight:600;background:var(--realce);white-space:nowrap}
+td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tr.sub td:first-child{padding-left:28px;color:var(--suave)}
+tr.total td{font-weight:600;background:var(--realce)}
+.fuente{color:var(--suave);font-size:12.5px;margin:.4em 0 0}
+.faq h3{margin-top:1.5em}
+.faq p{margin-top:.3em}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:1.2em 0}
+.rejilla a{display:block;background:var(--tarjeta);border:1px solid var(--borde);border-radius:12px;
+  padding:14px 16px;text-decoration:none;color:inherit}
+.rejilla a strong{display:block;color:var(--marca);font-size:15px}
+.rejilla a span{color:var(--suave);font-size:13px}
 </style>
 </head>
 <body>
-<div class="barra"><div><strong>ScrubCert</strong><a href="/">Home</a></div></div>
+<div class="barra"><div><strong><a href="/">ScrubCert</a></strong>
+<nav><a href="/#exams">Exams</a><a href="/how-we-write-questions.html">Our method</a></nav></div></div>
 <main>
 <h1>Privacy Policy</h1>
 <p class="sub">ScrubCert: Phlebotomy &amp; Medical Assistant &middot; Last updated: September 5, 2026 &middot; <a href="/support.html">Support</a></p>
 <h2>The short version</h2>
-<p>This app does not collect your data. There is no account, no login, and no server that receives anything from you. Everything you do in the app stays on your iPhone.</p>
+<p>This app does not collect your data. There is no account, no login, and no server of ours that receives anything from you. Everything you do in the app stays on your iPhone, with one exception you control: a copy of your study progress is saved to your own iCloud account so you don&#x27;t lose it when you change phones. That copy is yours. We never see it and have no way to.</p>
 <h2>What the app stores, and where</h2>
 <p>The app saves your study progress on your own device: which questions you have answered, which ones you got wrong or bookmarked, your practice-test results, your diagnostic results, your study streak, your language choice, your reminder setting, and which packages you have purchased.</p>
 <p>That information is stored locally using the operating system&#x27;s standard storage. It is not transmitted to us, and we have no way to read it. If you delete the app, it is deleted with it.</p>
+<p>THE iCLOUD BACKUP OF YOUR PROGRESS</p>
+<p>Your study progress is also copied to your own iCloud account, using the key-value storage that Apple provides for exactly this. It exists for one reason: so that reinstalling the app or moving to a new iPhone does not wipe out months of studying.</p>
+<ul class="lista-lim"><li>It is YOUR iCloud account, not ours. There is nothing to sign up for and no password to give anyone. If you are signed in to iCloud on your iPhone, it works; if you are not, the app works exactly the same and simply makes no copy.</li><li>We do not see it, and we cannot. The copy goes from your iPhone to Apple&#x27;s iCloud and back to your own devices. It never passes through any server of ours, and we have no account, key or interface that could read it. Apple&#x27;s handling of it is governed by Apple&#x27;s privacy policy, not by this one.</li><li>What is copied: which questions you have answered, which you got wrong, your practice-test and diagnostic results, your practice days per content area, your study streak, the exam date you entered, and your language choice. Nothing else. Your purchases are not copied here — those are restored by Apple with &quot;Restore purchases&quot;.</li><li>You can turn it off. In your iPhone&#x27;s Settings, under your name, tap iCloud and turn this app off. Nothing else in the app changes.</li><li>You can erase it. &quot;Erase my progress&quot; in the app&#x27;s More tab deletes the copy in your iCloud as well as the one on your iPhone.</li></ul>
 <h2>What we do not do</h2>
 <ul class="lista-lim"><li>We do not ask for your name, email address, or phone number.</li><li>We do not create accounts. There is nothing to log in to.</li><li>We do not use analytics, tracking, or advertising of any kind. There is no analytics SDK and no advertising SDK inside this app.</li><li>We do not show ads.</li><li>We do not sell, share, or transfer any information about you to anyone, because we do not have any.</li><li>We do not request access to your location, camera, microphone, contacts, photos, or health data. The app declares no such permissions, so iOS will never prompt you for them.</li></ul>
 <h2>The daily reminder</h2>
@@ -72,15 +100,26 @@ hr{border:none;border-top:1px solid var(--borde);margin:2.5em 0}
 <h2>About the content</h2>
 <p>The questions, explanations, calculation problems and guides in this app are written by us. The domains and their weights come from the test plans and content outlines published by each certifying body, and every explanation cites the public authority it rests on — the Centers for Disease Control and Prevention, OSHA, the CLIA regulations, the FDA, the Centers for Medicare &amp; Medicaid Services, the National Institutes of Health and its National Library of Medicine, the World Health Organization, and others named in the app — so that you can check it against the source yourself.</p>
 <p>We do not reproduce text from any textbook or from any paid standard. We do not reproduce any real exam question.</p>
-<p>This app is an independent study aid. It is not official and is not affiliated with, endorsed by, or sponsored by the National Healthcareer Association (NHA), the American Society for Clinical Pathology (ASCP), the American Association of Medical Assistants (AAMA), American Medical Technologists (AMT), the National Center for Competency Testing (NCCT), any school or training program, any test administration company, or any publisher. All names of examinations and organizations are used only to describe the exams this app prepares for.</p>
 <h2>Your rights</h2>
-<p>Laws such as the GDPR in Europe and the CCPA in California give you the right to access, correct, or delete the personal information a company holds about you. We hold none. There is nothing for us to look up, correct, hand over, or erase, because nothing ever leaves your device.</p>
+<p>Laws such as the GDPR in Europe and the CCPA in California give you the right to access, correct, or delete the personal information a company holds about you. We hold none. There is nothing for us to look up, correct, hand over, or erase: the only copy of anything that leaves your iPhone goes to your own iCloud account, where it belongs to you and we have no access to it.</p>
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the date at the top changes with it. Because the app collects nothing, we do not expect substantive changes.</p>
 <h2>Contact</h2>
 <p>Questions about this policy or about the app: <a href="mailto:rafael@orejita.com">rafael@orejita.com</a></p>
-<p>Support: /support.html</p>
-<p class="pie">&copy; 2026 ScrubCert &middot; <a href="/support.html">Support</a> &middot; <a href="/privacy.html">Privacy</a></p>
+<p>Support: <a href="/support.html">scrubcert.com/support.html</a></p><nav class="pie-nav"><a href="/">Home</a>
+<a href="/cpt.html">NHA CPT</a>
+<a href="/pbt.html">ASCP PBT</a>
+<a href="/ccma.html">NHA CCMA</a>
+<a href="/cma.html">CMA (AAMA)</a>
+<a href="/rma.html">AMT RMA</a>
+<a href="/cmaa.html">NHA CMAA</a>
+<a href="/ncma.html">NCCT NCMA</a>
+<a href="/cma-2027.html">CMA 2027 change</a>
+<a href="/how-we-write-questions.html">How we write questions</a>
+<a href="/content-standards.html">Content standards</a>
+<a href="/support.html">Support</a></nav>
+<p class="aviso">This app is an independent study aid. It is not official and is not affiliated with, endorsed by, or sponsored by the National Healthcareer Association (NHA), the American Society for Clinical Pathology (ASCP), the American Association of Medical Assistants (AAMA), American Medical Technologists (AMT), the National Center for Competency Testing (NCCT), any school or training program, any test administration company, or any publisher. All names of examinations and organizations are used only to describe the exams this app prepares for. It does not reproduce any real exam question.</p>
+<p class="pie">&copy; 2026 ScrubCert</p>
 </main>
 </body>
 </html>

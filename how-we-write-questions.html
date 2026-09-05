@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How We Write ScrubCert’s Practice Questions</title>
+<meta name="description" content="The method behind every ScrubCert question: the official outline, a public source, an original question, automatic checks, adversarial verification, publication with the citation attached, and continuous revision.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://scrubcert.com/how-we-write-questions.html">
+<style>
+:root{
+  --tinta:#14243a; --suave:#5a6a80; --fondo:#f7f8fa; --tarjeta:#ffffff;
+  --marca:#1f5fbf; --marca-oscura:#17488f; --borde:#e2e6ec; --realce:#eef3fb;
+}
+@media (prefers-color-scheme: dark){
+  :root{--tinta:#e8edf4; --suave:#9fb0c6; --fondo:#0f1621; --tarjeta:#161f2c;
+        --marca:#6fa2ee; --marca-oscura:#8fbaf5; --borde:#26313f; --realce:#1b2534;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%}
+a{color:var(--marca)}
+.barra{background:var(--tarjeta);border-bottom:1px solid var(--borde)}
+.barra div{max-width:760px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;
+  gap:10px;flex-wrap:wrap}
+.barra strong{font-size:17px;letter-spacing:-.2px}
+.barra strong a{color:inherit;text-decoration:none}
+.barra nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+.barra nav a{text-decoration:none}
+main{max-width:760px;margin:0 auto;padding:28px 20px 64px}
+h1{font-size:30px;line-height:1.2;letter-spacing:-.5px;margin:.4em 0 .2em}
+h2{font-size:20px;letter-spacing:-.2px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--borde)}
+h2:first-of-type{border-top:none;padding-top:0}
+h3{font-size:16px;margin:1.6em 0 .3em}
+.sub{color:var(--suave);font-size:14px;margin:0 0 2em}
+ul{padding-left:1.2em}
+li{margin:.35em 0}
+hr{border:none;border-top:1px solid var(--borde);margin:2.5em 0}
+.pie{color:var(--suave);font-size:13px;margin-top:1.2em}
+.aviso{color:var(--suave);font-size:12.5px;line-height:1.55;margin-top:2.5em;
+  padding-top:1.2em;border-top:1px solid var(--borde)}
+.pie-nav{font-size:13px;line-height:2;margin-top:3em}
+.pie-nav a{text-decoration:none;margin-right:14px;white-space:nowrap}
+.tarjeta{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:20px 22px;margin:1.5em 0}
+.cta{display:inline-block;background:var(--marca);color:#fff;text-decoration:none;
+  padding:12px 22px;border-radius:10px;font-weight:600;margin-top:.5em}
+.lista-lim{list-style:none;padding:0}
+.lista-lim li{padding-left:1.5em;position:relative}
+.lista-lim li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;
+  border-radius:50%;background:var(--marca)}
+.rueda{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.2em 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;color:var(--suave);font-size:13px;padding-bottom:.6em}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--borde);vertical-align:top}
+th{font-weight:600;background:var(--realce);white-space:nowrap}
+td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tr.sub td:first-child{padding-left:28px;color:var(--suave)}
+tr.total td{font-weight:600;background:var(--realce)}
+.fuente{color:var(--suave);font-size:12.5px;margin:.4em 0 0}
+.faq h3{margin-top:1.5em}
+.faq p{margin-top:.3em}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:1.2em 0}
+.rejilla a{display:block;background:var(--tarjeta);border:1px solid var(--borde);border-radius:12px;
+  padding:14px 16px;text-decoration:none;color:inherit}
+.rejilla a strong{display:block;color:var(--marca);font-size:15px}
+.rejilla a span{color:var(--suave);font-size:13px}
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do ScrubCert’s questions come from?", "acceptedAnswer": {"@type": "Answer", "text": "Every question is written by us from the certifying body’s published outline and from public sources anyone can open: the CDC, OSHA, the CLIA and HIPAA regulations, the FDA, CMS, the NIH and its National Library of Medicine, the WHO and others. No question is taken from a real exam and no text is taken from a textbook."}}, {"@type": "Question", "name": "Does ScrubCert use real exam questions?", "acceptedAnswer": {"@type": "Answer", "text": "No. Reproducing a real exam question would be both illegal and useless: the exams are confidential and their question pools change. ScrubCert follows the published outline; it does not copy the exam."}}, {"@type": "Question", "name": "What happens when a certifying body changes an exam?", "acceptedAnswer": {"@type": "Answer", "text": "The content in the app is versioned and dated, and it updates without waiting for a new release of the app. A single question can be switched off on its own, and a whole content version can be rolled back, without touching anything else."}}, {"@type": "Question", "name": "What if I find a mistake?", "acceptedAnswer": {"@type": "Answer", "text": "Report it from inside the app or write to rafael@orejita.com. Every report is checked against the source document and, if it holds, the content is corrected."}}]}
+</script>
+</head>
+<body>
+<div class="barra"><div><strong><a href="/">ScrubCert</a></strong>
+<nav><a href="/#exams">Exams</a><a href="/how-we-write-questions.html">Our method</a></nav></div></div>
+<main>
+<h1>How we write the questions</h1>
+<p class="sub">A practice question is only worth answering if it is right, if it is right for a reason someone can check, and if it is measuring what your exam measures. This is the process that gets it there.</p>
+<h2>1. The official outline first</h2>
+<p>Nothing is written until the certifying body’s current outline is in hand as a document: the NHA test plans, the ASCP BOC content guideline, the AAMA content outlines, the AMT competencies and specifications, the NCCT detailed test plan. The areas, the number of scored questions and the weights in this app are read off those documents, and the date of the version in force is recorded with them.</p>
+<h2>2. A public source for the fact itself</h2>
+<p>An outline tells us what is examined, not what the answer is. For that, the source has to be a public authority that you can open and read yourself: a CDC guideline, an OSHA standard, a section of the CLIA or HIPAA regulations, an FDA or CMS page, a MedlinePlus or NIH article, a WHO guideline. Each one is downloaded and stored with its URL, the date it was fetched, and how it was fetched.</p>
+<h2>3. An original question, written to the task</h2>
+<p>The question is then written from that stored source. It is written in our own words: the automatic checks reject any long literal run copied from the source. Each of the three wrong options has to be a mistake someone could genuinely make &mdash; the neighbouring value, the adjacent step, the rule stated backwards &mdash; never an absurd filler that a candidate can strike out without knowing the material.</p>
+<h2>4. Automatic checks, before a human looks again</h2>
+<p>Every question then has to survive a set of checks that run over the whole bank before anything ships. They are not a formality: each of them exists because it once caught something real.</p>
+<ul class="lista-lim"><li>Form: exactly four options, none repeated, none of them &quot;all of the above&quot;, an explanation long enough to be an explanation, and a citation that starts with an authority on the allowed list and with no publisher on the forbidden one.</li><li>Duplicates: pairs of questions that measure the same thing in different words, which the shuffler would otherwise put next to each other.</li><li>Length bias: if the correct answer is systematically the longest option, or the shortest, the exam can be passed by a rule of thumb instead of by knowing anything. The check runs on the whole bank and again on each individual practice test.</li><li>Contradictions: the same statement rewarded as correct in one question and punished as a distractor in an equivalent one.</li><li>Orphans: a question that says &quot;that tube&quot; or &quot;the previous question&quot; and loses its referent the moment the options are shuffled.</li><li>Support in the source: the terms the question asserts have to appear in the harvested material, and no long literal run may be copied from it.</li><li>Harvest integrity: a stored source file whose header does not match its body &mdash; the page that came down as a site menu with no content, or the article number that was guessed instead of looked up. This is the most expensive failure of all, because nothing breaks: the question reads correctly and its citation points at a page that does not say that.</li><li>Translation parity: a Spanish question that loses an element, changes a number, or leaves English behind. Numbers, units, ranges, negations and conditions have to match or it does not ship.</li></ul>
+<p>A check that fails stops the build. Nothing ships around a failing check.</p>
+<h2>5. Adversarial verification</h2>
+<p>A separate pass reads the question against the harvested source material and tries to break it: is the claim actually supported by the source, or only nearly? Is the wording copied? Does the question quietly depend on a fact from a different jurisdiction? Is the cited section the one that says this? Anything that cannot be defended from the source is rewritten or dropped.</p>
+<h2>6. Publication with its source attached</h2>
+<p>A question ships with the explanation and the citation as part of it. The explanation says why the right answer is right and why each of the other three is wrong, and it names the document behind it. Nothing ships with an explanation that cannot name one.</p>
+<h2>7. Continuous revision</h2>
+<p>The content is versioned and dated, and it can be updated without a new release of the app. A single question can be switched off without disturbing the rest, and a content version can be rolled back to the previous one. Reports from users are checked against the source and corrected. When a certifying body publishes a new outline with a start date, the app carries both and lets you choose the one you are sitting.</p>
+<h2>What this process does not promise</h2>
+<ul class="lista-lim"><li>It does not promise you a pass. No practice app can, and any number offered as a &quot;probability of passing&quot; is invented: it would take the real results of thousands of candidates to compute one honestly.</li><li>It does not reproduce your exam. It follows the same outline your exam is built from, which is a different and more useful thing.</li><li>It does not replace your program, your employer’s protocols, or the rules of your state. Those come from your school and from the certifying body.</li><li>It is not perfect. Errors survive checks; that is what the report button and the ability to correct content without a new release are for.</li></ul>
+<h2>Questions people ask</h2>
+<div class="faq">
+<h3>Where do ScrubCert’s questions come from?</h3><p>Every question is written by us from the certifying body’s published outline and from public sources anyone can open: the CDC, OSHA, the CLIA and HIPAA regulations, the FDA, CMS, the NIH and its National Library of Medicine, the WHO and others. No question is taken from a real exam and no text is taken from a textbook.</p>
+<h3>Does ScrubCert use real exam questions?</h3><p>No. Reproducing a real exam question would be both illegal and useless: the exams are confidential and their question pools change. ScrubCert follows the published outline; it does not copy the exam.</p>
+<h3>What happens when a certifying body changes an exam?</h3><p>The content in the app is versioned and dated, and it updates without waiting for a new release of the app. A single question can be switched off on its own, and a whole content version can be rolled back, without touching anything else.</p>
+<h3>What if I find a mistake?</h3><p>Report it from inside the app or write to rafael@orejita.com. Every report is checked against the source document and, if it holds, the content is corrected.</p>
+</div>
+<h2>Related</h2>
+<p>See <a href="/content-standards.html">our content standards</a> for the sources we use, the ones we refuse and why, and what a declared gap is. Or go straight to an exam: <a href="/cpt.html">NHA CPT</a> &middot; <a href="/pbt.html">ASCP PBT</a> &middot; <a href="/ccma.html">NHA CCMA</a> &middot; <a href="/cma.html">CMA (AAMA)</a> &middot; <a href="/rma.html">AMT RMA</a> &middot; <a href="/cmaa.html">NHA CMAA</a> &middot; <a href="/ncma.html">NCCT NCMA</a>.</p><nav class="pie-nav"><a href="/">Home</a>
+<a href="/cpt.html">NHA CPT</a>
+<a href="/pbt.html">ASCP PBT</a>
+<a href="/ccma.html">NHA CCMA</a>
+<a href="/cma.html">CMA (AAMA)</a>
+<a href="/rma.html">AMT RMA</a>
+<a href="/cmaa.html">NHA CMAA</a>
+<a href="/ncma.html">NCCT NCMA</a>
+<a href="/cma-2027.html">CMA 2027 change</a>
+<a href="/content-standards.html">Content standards</a>
+<a href="/support.html">Support</a>
+<a href="/privacy.html">Privacy</a></nav>
+<p class="aviso">This app is an independent study aid. It is not official and is not affiliated with, endorsed by, or sponsored by the National Healthcareer Association (NHA), the American Society for Clinical Pathology (ASCP), the American Association of Medical Assistants (AAMA), American Medical Technologists (AMT), the National Center for Competency Testing (NCCT), any school or training program, any test administration company, or any publisher. All names of examinations and organizations are used only to describe the exams this app prepares for. It does not reproduce any real exam question.</p>
+<p class="pie">&copy; 2026 ScrubCert</p>
+</main>
+</body>
+</html>

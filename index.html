@@ -10,11 +10,11 @@
 <style>
 :root{
   --tinta:#14243a; --suave:#5a6a80; --fondo:#f7f8fa; --tarjeta:#ffffff;
-  --marca:#1f5fbf; --marca-oscura:#17488f; --borde:#e2e6ec;
+  --marca:#1f5fbf; --marca-oscura:#17488f; --borde:#e2e6ec; --realce:#eef3fb;
 }
 @media (prefers-color-scheme: dark){
   :root{--tinta:#e8edf4; --suave:#9fb0c6; --fondo:#0f1621; --tarjeta:#161f2c;
-        --marca:#6fa2ee; --marca-oscura:#8fbaf5; --borde:#26313f;}
+        --marca:#6fa2ee; --marca-oscura:#8fbaf5; --borde:#26313f; --realce:#1b2534;}
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--fondo);color:var(--tinta);
@@ -22,18 +22,26 @@ body{margin:0;background:var(--fondo);color:var(--tinta);
   -webkit-text-size-adjust:100%}
 a{color:var(--marca)}
 .barra{background:var(--tarjeta);border-bottom:1px solid var(--borde)}
-.barra div{max-width:760px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:10px}
+.barra div{max-width:760px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;
+  gap:10px;flex-wrap:wrap}
 .barra strong{font-size:17px;letter-spacing:-.2px}
-.barra a{margin-left:auto;font-size:14px;text-decoration:none}
+.barra strong a{color:inherit;text-decoration:none}
+.barra nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+.barra nav a{text-decoration:none}
 main{max-width:760px;margin:0 auto;padding:28px 20px 64px}
 h1{font-size:30px;line-height:1.2;letter-spacing:-.5px;margin:.4em 0 .2em}
 h2{font-size:20px;letter-spacing:-.2px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--borde)}
 h2:first-of-type{border-top:none;padding-top:0}
+h3{font-size:16px;margin:1.6em 0 .3em}
 .sub{color:var(--suave);font-size:14px;margin:0 0 2em}
 ul{padding-left:1.2em}
 li{margin:.35em 0}
 hr{border:none;border-top:1px solid var(--borde);margin:2.5em 0}
-.pie{color:var(--suave);font-size:13px;margin-top:3em}
+.pie{color:var(--suave);font-size:13px;margin-top:1.2em}
+.aviso{color:var(--suave);font-size:12.5px;line-height:1.55;margin-top:2.5em;
+  padding-top:1.2em;border-top:1px solid var(--borde)}
+.pie-nav{font-size:13px;line-height:2;margin-top:3em}
+.pie-nav a{text-decoration:none;margin-right:14px;white-space:nowrap}
 .tarjeta{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:20px 22px;margin:1.5em 0}
 .cta{display:inline-block;background:var(--marca);color:#fff;text-decoration:none;
   padding:12px 22px;border-radius:10px;font-weight:600;margin-top:.5em}
@@ -41,27 +49,49 @@ hr{border:none;border-top:1px solid var(--borde);margin:2.5em 0}
 .lista-lim li{padding-left:1.5em;position:relative}
 .lista-lim li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;
   border-radius:50%;background:var(--marca)}
+.rueda{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.2em 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+caption{text-align:left;color:var(--suave);font-size:13px;padding-bottom:.6em}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--borde);vertical-align:top}
+th{font-weight:600;background:var(--realce);white-space:nowrap}
+td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tr.sub td:first-child{padding-left:28px;color:var(--suave)}
+tr.total td{font-weight:600;background:var(--realce)}
+.fuente{color:var(--suave);font-size:12.5px;margin:.4em 0 0}
+.faq h3{margin-top:1.5em}
+.faq p{margin-top:.3em}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:1.2em 0}
+.rejilla a{display:block;background:var(--tarjeta);border:1px solid var(--borde);border-radius:12px;
+  padding:14px 16px;text-decoration:none;color:inherit}
+.rejilla a strong{display:block;color:var(--marca);font-size:15px}
+.rejilla a span{color:var(--suave);font-size:13px}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ScrubCert",
+"applicationCategory":"EducationalApplication","operatingSystem":"iOS",
+"description":"Study app for the NHA CPT, ASCP PBT, NHA CCMA, AAMA CMA, AMT RMA, NHA CMAA and NCCT NCMA certification exams. One-time purchase, no subscription, English and Spanish.",
+"inLanguage":["en","es"],"url":"https://scrubcert.com/"}
+</script>
 </head>
 <body>
-<div class="barra"><div><strong>ScrubCert</strong><a href="/">Home</a></div></div>
+<div class="barra"><div><strong><a href="/">ScrubCert</a></strong>
+<nav><a href="/#exams">Exams</a><a href="/how-we-write-questions.html">Our method</a></nav></div></div>
 <main>
 <h1>Pass your phlebotomy or medical assistant certification.</h1>
 <p class="sub">One app. Seven certifications. One-time purchase, no subscription.</p>
 
 <div class="tarjeta">
 <p><strong>ScrubCert</strong> is an iPhone study app for the certification exams that allied
-health students actually sit:</p>
-<ul class="lista-lim">
-<li>NHA CPT &mdash; Certified Phlebotomy Technician</li>
-<li>ASCP PBT &mdash; Phlebotomy Technician, Board of Certification</li>
-<li>NHA CCMA &mdash; Certified Clinical Medical Assistant</li>
-<li>AAMA CMA &mdash; Certified Medical Assistant</li>
-<li>AMT RMA &mdash; Registered Medical Assistant</li>
-<li>NHA CMAA &mdash; Certified Medical Administrative Assistant</li>
-<li>NCCT NCMA &mdash; National Certified Medical Assistant</li>
-</ul>
+health students actually sit. Each one has its own page here, with the format, the domains and
+their weights, the passing score and what it takes to renew:</p>
 </div>
+
+<h2 id="exams">The seven exams</h2>
+<div class="rejilla">
+<a href="/cpt.html"><strong>NHA CPT</strong><span>Certified Phlebotomy Technician (CPT)</span></a><a href="/pbt.html"><strong>ASCP PBT</strong><span>Phlebotomy Technician, PBT(ASCP)</span></a><a href="/ccma.html"><strong>NHA CCMA</strong><span>Certified Clinical Medical Assistant (CCMA)</span></a><a href="/cma.html"><strong>CMA (AAMA)</strong><span>Certified Medical Assistant, CMA (AAMA)</span></a><a href="/rma.html"><strong>AMT RMA</strong><span>Registered Medical Assistant (RMA)</span></a><a href="/cmaa.html"><strong>NHA CMAA</strong><span>Certified Medical Administrative Assistant (CMAA)</span></a><a href="/ncma.html"><strong>NCCT NCMA</strong><span>National Certified Medical Assistant (NCMA)</span></a>
+</div>
+<p>The CMA (AAMA) outline changes in July 2027. If you are sitting that exam, read
+<a href="/cma-2027.html">what moves and what to study</a> before you pick a study plan.</p>
 
 <h2>Built the way the exam is built</h2>
 <p>Every practice test carries the same number of scored questions as the real exam, the same time
@@ -75,6 +105,8 @@ they rest on public authorities you can open yourself: the CDC, OSHA, the CLIA r
 FDA, the Centers for Medicare &amp; Medicaid Services, the National Institutes of Health and its
 National Library of Medicine, and the World Health Organization. No textbook is reproduced, and no
 real exam question is reproduced.</p>
+<p>Read <a href="/how-we-write-questions.html">how we write the questions</a> and
+<a href="/content-standards.html">which sources we use and which we refuse</a>.</p>
 
 <h2>Free, with no account and no purchase</h2>
 <ul class="lista-lim">
@@ -104,13 +136,20 @@ nothing is sent anywhere.</p>
 Read the <a href="/support.html">support page</a> or the
 <a href="/privacy.html">privacy policy</a>.</p>
 </div>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ScrubCert",
-"applicationCategory":"EducationalApplication","operatingSystem":"iOS",
-"description":"Study app for the NHA CPT, ASCP PBT, NHA CCMA, AAMA CMA, AMT RMA, NHA CMAA and NCCT NCMA certification exams. One-time purchase, no subscription, English and Spanish.",
-"inLanguage":["en","es"],"url":"https://scrubcert.com/"}
-</script>
-<p class="pie">&copy; 2026 ScrubCert &middot; <a href="/support.html">Support</a> &middot; <a href="/privacy.html">Privacy</a></p>
+<nav class="pie-nav"><a href="/cpt.html">NHA CPT</a>
+<a href="/pbt.html">ASCP PBT</a>
+<a href="/ccma.html">NHA CCMA</a>
+<a href="/cma.html">CMA (AAMA)</a>
+<a href="/rma.html">AMT RMA</a>
+<a href="/cmaa.html">NHA CMAA</a>
+<a href="/ncma.html">NCCT NCMA</a>
+<a href="/cma-2027.html">CMA 2027 change</a>
+<a href="/how-we-write-questions.html">How we write questions</a>
+<a href="/content-standards.html">Content standards</a>
+<a href="/support.html">Support</a>
+<a href="/privacy.html">Privacy</a></nav>
+<p class="aviso">This app is an independent study aid. It is not official and is not affiliated with, endorsed by, or sponsored by the National Healthcareer Association (NHA), the American Society for Clinical Pathology (ASCP), the American Association of Medical Assistants (AAMA), American Medical Technologists (AMT), the National Center for Competency Testing (NCCT), any school or training program, any test administration company, or any publisher. All names of examinations and organizations are used only to describe the exams this app prepares for. It does not reproduce any real exam question.</p>
+<p class="pie">&copy; 2026 ScrubCert</p>
 </main>
 </body>
 </html>
