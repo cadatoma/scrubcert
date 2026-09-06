@@ -10,11 +10,13 @@
 <style>
 :root{
   --tinta:#14243a; --suave:#5a6a80; --fondo:#f7f8fa; --tarjeta:#ffffff;
-  --marca:#1f5fbf; --marca-oscura:#17488f; --borde:#e2e6ec; --realce:#eef3fb;
+  --marca:#0a6e9b; --marca-oscura:#08536f; --borde:#e2e6ec; --realce:#eaf5fb;
+  --sobre-marca:#ffffff;
 }
 @media (prefers-color-scheme: dark){
   :root{--tinta:#e8edf4; --suave:#9fb0c6; --fondo:#0f1621; --tarjeta:#161f2c;
-        --marca:#6fa2ee; --marca-oscura:#8fbaf5; --borde:#26313f; --realce:#1b2534;}
+        --marca:#79cbf2; --marca-oscura:#a3dcf7; --borde:#26313f; --realce:#152230;
+        --sobre-marca:#06263a;}
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--fondo);color:var(--tinta);
@@ -43,7 +45,7 @@ hr{border:none;border-top:1px solid var(--borde);margin:2.5em 0}
 .pie-nav{font-size:13px;line-height:2;margin-top:3em}
 .pie-nav a{text-decoration:none;margin-right:14px;white-space:nowrap}
 .tarjeta{background:var(--tarjeta);border:1px solid var(--borde);border-radius:14px;padding:20px 22px;margin:1.5em 0}
-.cta{display:inline-block;background:var(--marca);color:#fff;text-decoration:none;
+.cta{display:inline-block;background:var(--marca);color:var(--sobre-marca);text-decoration:none;
   padding:12px 22px;border-radius:10px;font-weight:600;margin-top:.5em}
 .lista-lim{list-style:none;padding:0}
 .lista-lim li{padding-left:1.5em;position:relative}
@@ -100,7 +102,8 @@ tr.total td{font-weight:600;background:var(--realce)}
 <p>The one-time purchase unlocks the full question bank for that certification, all of its timed practice tests, a scored test for every domain, custom quizzes, your missed and bookmarked questions, your test history, and the readiness score, with no limit on attempts.</p>
 <p>What is free stays free. Nothing is taken away after a trial period, because there is no trial period.</p>
 <h2>How do I read it in Spanish?</h2>
-<p>Tap &quot;More&quot; at the bottom right, then choose the language. Everything is available in both English and Spanish — the interface, the exam guides, and every question with its explanation. Inside any question you can also flip that one question between English and Spanish with a single tap, which is the easiest way to learn the English term you will see on exam day. You can switch at any time, and your progress is kept.</p>
+<p>Tap &quot;More&quot; at the bottom right, then choose the language. The app itself is in both languages: the interface, the exam guides, the worked calculations, the study sheets, the glossary, the reference tables and the illustrations are all written in English and in Spanish.</p>
+<p>The question bank is being translated, and that work is not finished. Until it is, it shows in English while the app is in Spanish. Inside a question, when the Spanish for that question is ready, a button flips that one question between the two languages with a single tap — which is the easiest way to learn the English term you will see on exam day. The button appears only on the questions that already have it, and more arrive with each content update, at no cost. You can switch language at any time, and your progress is kept.</p>
 <p>The real exams are given in English. Studying in Spanish is a way to understand the material; the app always shows you the English wording too.</p>
 <h2>Does it work without internet?</h2>
 <p>Yes. Everything is stored inside the app. The only moments it needs a connection are when you make or restore a purchase, because that step talks to Apple, and when you choose to download a content update.</p>
@@ -118,9 +121,9 @@ tr.total td{font-weight:600;background:var(--realce)}
 <p>The app follows the text size you set in Settings &gt; Display &amp; Brightness &gt; Text Size, including the accessibility sizes. It has a full dark mode that follows your system setting. Right and wrong answers are marked with an icon as well as a color, so they can be told apart without relying on color, and the illustrations carry descriptions for VoiceOver.</p>
 <p>If something in the app is hard for you to use, write and say so. That feedback gets acted on.</p>
 <h2>Deleting your data</h2>
-<p>Your progress is stored only on your iPhone. Deleting the app deletes it. Nothing of yours is held anywhere else, because nothing is collected. See the privacy policy for details.</p>
+<p>Your progress is stored on your iPhone and copied to your own iCloud account, so that changing phones does not wipe out months of studying. That copy is yours: it never passes through any server of ours and we have no way to read it. &quot;Erase my progress&quot;, under &quot;More&quot;, deletes both the copy on the phone and the one in your iCloud. Deleting the app deletes what is on the phone. Nothing about you is collected by us. See the privacy policy for details.</p>
 <hr>
-<p>Privacy policy: <a href="/privacy.html">scrubcert.com/privacy.html</a></p><nav class="pie-nav"><a href="/">Home</a>
+<p>Privacy policy: <a href="https://scrubcert.com/privacy.html">https://scrubcert.com/privacy.html</a></p><nav class="pie-nav"><a href="/">Home</a>
 <a href="/cpt.html">NHA CPT</a>
 <a href="/pbt.html">ASCP PBT</a>
 <a href="/ccma.html">NHA CCMA</a>
