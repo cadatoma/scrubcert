@@ -1,69 +1,69 @@
 {
  "formato": 1,
- "generado": "2026-09-05",
+ "generado": "2026-10-01",
  "paquetes": {
   "ccma": {
-   "bytes": 3914555,
-   "fecha": "2026-09-05",
+   "bytes": 8869463,
+   "fecha": "2026-10-01",
    "formato": 1,
-   "preguntas": 3655,
-   "sha256": "33e37c87727b646371562c6dc196fcb56c93b84c738c4bce771a29e5e9508187",
-   "url": "https://scrubcert.com/contenido/ccma-1.json",
-   "v": 1
+   "preguntas": 3846,
+   "sha256": "85ff89eca7619e3955808e5ce05608cd90dc637c5f081c6d6b77c458660af481",
+   "url": "https://scrubcert.com/contenido/ccma-2.json",
+   "v": 2
   },
   "cma": {
-   "bytes": 3236233,
-   "fecha": "2026-09-05",
+   "bytes": 7477735,
+   "fecha": "2026-10-01",
    "formato": 1,
-   "preguntas": 2946,
-   "sha256": "0837bd2b93e7df5cb58325201948a56ce14c8a9b09538ffed1d83674611fec06",
-   "url": "https://scrubcert.com/contenido/cma-1.json",
-   "v": 1
+   "preguntas": 3130,
+   "sha256": "92a41ff3cb416462d16780c05fdf6738dbcc2d9391c1913fdfc13404a7805227",
+   "url": "https://scrubcert.com/contenido/cma-2.json",
+   "v": 2
   },
   "cmaa": {
-   "bytes": 1132440,
-   "fecha": "2026-09-05",
+   "bytes": 2941778,
+   "fecha": "2026-10-01",
    "formato": 1,
-   "preguntas": 1069,
-   "sha256": "f2aa1e082782bd546e2a3b9c476d4898bb2f3059c8274ce3492cb315de2b2333",
-   "url": "https://scrubcert.com/contenido/cmaa-1.json",
-   "v": 1
+   "preguntas": 1242,
+   "sha256": "515390ac8427cc082c7b39c9ab6254c94acabee095d9cfb72b5136f616af6270",
+   "url": "https://scrubcert.com/contenido/cmaa-2.json",
+   "v": 2
   },
   "cpt": {
-   "bytes": 1781989,
-   "fecha": "2026-09-05",
+   "bytes": 4029457,
+   "fecha": "2026-10-01",
    "formato": 1,
-   "preguntas": 1546,
-   "sha256": "de539b080e205d7ca9f36e6ab0c93ef711cea3e87b7702c633f0ffbd877261e0",
-   "url": "https://scrubcert.com/contenido/cpt-1.json",
-   "v": 1
+   "preguntas": 1574,
+   "sha256": "ea53615379e861c5155482379d315aae12a03e011bc4cdb0edec0d9885ad272e",
+   "url": "https://scrubcert.com/contenido/cpt-2.json",
+   "v": 2
   },
   "ncma": {
-   "bytes": 2625398,
-   "fecha": "2026-09-05",
+   "bytes": 6018194,
+   "fecha": "2026-10-01",
    "formato": 1,
-   "preguntas": 2369,
-   "sha256": "10268c557902bb531c4fc73d5636912d225986355f77cd6a51b2e8627690da91",
-   "url": "https://scrubcert.com/contenido/ncma-1.json",
-   "v": 1
+   "preguntas": 2497,
+   "sha256": "1c2524d1ed5e298b5f2a02ba0c29cbcff220b8820ab78ef8b18b304cf0966adc",
+   "url": "https://scrubcert.com/contenido/ncma-2.json",
+   "v": 2
   },
   "pbt": {
-   "bytes": 1862557,
-   "fecha": "2026-09-05",
+   "bytes": 4202466,
+   "fecha": "2026-10-01",
    "formato": 1,
-   "preguntas": 1608,
-   "sha256": "b6b9669b4de366f3a942d009b7c921bd5aca26b94b256a26bd6e6c1346ef56d2",
-   "url": "https://scrubcert.com/contenido/pbt-1.json",
-   "v": 1
+   "preguntas": 1636,
+   "sha256": "978d0d67f8c923e0acf3fca8c26242f5eaa8984ba87fcbe4c7e5a34d1ab44ab5",
+   "url": "https://scrubcert.com/contenido/pbt-2.json",
+   "v": 2
   },
   "rma": {
-   "bytes": 3195756,
-   "fecha": "2026-09-05",
+   "bytes": 7236619,
+   "fecha": "2026-10-01",
    "formato": 1,
-   "preguntas": 2946,
-   "sha256": "34a3b8570e9736d1841b7593fceb0cf9acbb280aa9394b66034ccf8082e27aa0",
-   "url": "https://scrubcert.com/contenido/rma-1.json",
-   "v": 1
+   "preguntas": 3082,
+   "sha256": "89d0fe15dbd54509bbfe3a3434f837f729bd97540b113856d5862774aee042c1",
+   "url": "https://scrubcert.com/contenido/rma-2.json",
+   "v": 2
   }
  },
  "retiradas": []
