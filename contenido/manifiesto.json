@@ -1,33 +1,33 @@
 {
  "formato": 1,
- "generado": "2026-11-01",
+ "generado": "2026-11-15",
  "paquetes": {
   "ccma": {
-   "bytes": 8872090,
-   "fecha": "2026-11-01",
+   "bytes": 8872516,
+   "fecha": "2026-11-15",
    "formato": 1,
    "preguntas": 3835,
-   "sha256": "8daee8f2fbcb8c801358b7471cf2d59395d7decea4e70d48f07c1d21ea9f7c39",
-   "url": "https://scrubcert.com/contenido/ccma-4.json",
-   "v": 4
+   "sha256": "50d708e4b6d5bd456a475cf2e5cb52ffa90057affe5ad76c2bc6d05cccef44b2",
+   "url": "https://scrubcert.com/contenido/ccma-5.json",
+   "v": 5
   },
   "cma": {
-   "bytes": 7482192,
-   "fecha": "2026-11-01",
+   "bytes": 7482609,
+   "fecha": "2026-11-15",
    "formato": 1,
    "preguntas": 3121,
-   "sha256": "7bb68379c24ed3131e5a52eb65c79ed4295ddd2f91479da44036717cb8613da3",
-   "url": "https://scrubcert.com/contenido/cma-4.json",
-   "v": 4
+   "sha256": "5574364bb61daa8fa3aade5786e4dbd926ffcb372d356318f06eb663b3665470",
+   "url": "https://scrubcert.com/contenido/cma-5.json",
+   "v": 5
   },
   "cmaa": {
-   "bytes": 2943886,
-   "fecha": "2026-11-01",
+   "bytes": 2943899,
+   "fecha": "2026-11-15",
    "formato": 1,
    "preguntas": 1242,
-   "sha256": "75a0fed610100666504fc7b2c30cd64926209476a0f4ccdc072c6bdc0a4eee12",
-   "url": "https://scrubcert.com/contenido/cmaa-4.json",
-   "v": 4
+   "sha256": "45fdc83cbbcc1f2dbc382de3287bae93097e361fc3c7b745d45c1ad61b330aac",
+   "url": "https://scrubcert.com/contenido/cmaa-5.json",
+   "v": 5
   },
   "cpt": {
    "bytes": 4011058,
@@ -39,13 +39,13 @@
    "v": 4
   },
   "ncma": {
-   "bytes": 6018582,
-   "fecha": "2026-11-01",
+   "bytes": 6019009,
+   "fecha": "2026-11-15",
    "formato": 1,
    "preguntas": 2492,
-   "sha256": "ccc18a3e125e4e7caba5b62a0a24312d0226a6cdde54eaeb3c31372ed3669ac4",
-   "url": "https://scrubcert.com/contenido/ncma-4.json",
-   "v": 4
+   "sha256": "3474c08be65b11486c6d2dba32397ff139ba4c43361ee980000198206df2bcaf",
+   "url": "https://scrubcert.com/contenido/ncma-5.json",
+   "v": 5
   },
   "pbt": {
    "bytes": 4190418,
@@ -57,13 +57,13 @@
    "v": 4
   },
   "rma": {
-   "bytes": 7242241,
-   "fecha": "2026-11-01",
+   "bytes": 7242658,
+   "fecha": "2026-11-15",
    "formato": 1,
    "preguntas": 3071,
-   "sha256": "2121fe050da07d326887234df6ba7eeb9bd072dcd9e1f29aaed9482af41d4b09",
-   "url": "https://scrubcert.com/contenido/rma-4.json",
-   "v": 4
+   "sha256": "27e5a02b36e362c97fbb56c4376035b6cfed394e05181e82803d4529eb1d21a7",
+   "url": "https://scrubcert.com/contenido/rma-5.json",
+   "v": 5
   }
  },
  "retiradas": []
